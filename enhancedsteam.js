@@ -6681,7 +6681,7 @@ function show_regional_pricing(type) {
 
 								// Format prices for each country
 								$.each(countries, function(country_index, country) {
-									if (country !== local_country) {
+									//if (country !== local_country) {
 										if (subid["prices"][country]) {
 											var country_currency = subid["prices"][country]["currency"].toString().toUpperCase();
 											var app_price = subid["prices"][country]["final"];
@@ -6694,7 +6694,7 @@ function show_regional_pricing(type) {
 	
 											sub_formatted.push(regional_price);
 										}
-									}
+									//}
 								});
 
 								$(app_pricing_div).append(sub_formatted);
